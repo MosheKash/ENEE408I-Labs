@@ -1,0 +1,5 @@
+# to build the image
+userid=$(id -u) groupid=$(id -g) docker compose -f lab-0-compose.yml build
+
+# to start the container
+docker compose -f lab-0-compose.yml run --rm lab-0-docker
